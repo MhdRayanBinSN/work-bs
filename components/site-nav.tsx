@@ -62,11 +62,11 @@ export function SiteNav() {
           <div className="hidden items-center gap-7 lg:flex">
             {nav.map((item) =>
               item.label === "Services" ? (
-                <div className="group relative" key={item.href}>
+                <div className="group relative flex h-20 items-center" key={item.href}>
                   <Link className="text-sm uppercase tracking-[0.22em] text-kasavu/80 transition hover:text-gold" href={item.href}>
                     {item.label}
                   </Link>
-                  <div className="invisible absolute left-1/2 top-8 w-[560px] -translate-x-1/2 rounded border border-gold/20 bg-night/95 p-5 opacity-0 shadow-glow transition group-hover:visible group-hover:opacity-100">
+                  <div className="invisible absolute left-1/2 top-full w-[560px] -translate-x-1/2 rounded border border-gold/20 bg-night/95 p-5 opacity-0 shadow-glow transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                     <div className="grid grid-cols-2 gap-3">
                       {services.map((service) => (
                         <Link className="rounded border border-white/10 p-4 transition hover:border-gold/60 hover:bg-gold/10" href={`/expertise/${service.slug}`} key={service.slug}>

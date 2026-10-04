@@ -9,6 +9,10 @@ export const studio = {
   phoneSecondary: "+91 96563 18835",
   email: "dancebrahma@gmail.com",
   address: "Brahma Entertainers, Changanasserry, Kottayam",
+  locations: [
+    { name: "Kottayam", address: "Brahma Entertainers, Changanasserry, Kottayam", mapQuery: "Changanasserry%20Kottayam%20Kerala" },
+    { name: "Kochi", address: "Brahma Entertainers, Kochi, Kerala", mapQuery: "Kochi%20Kerala" }
+  ],
   hours: "All days 9:00 AM - 8:00 PM, Sunday open",
   whatsapp: "919656318835",
   socials: {

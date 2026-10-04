@@ -1,3 +1,10 @@
+export type ServiceSubSection = {
+  title: string;
+  description: string;
+  image?: string;
+  gallery?: string[];
+};
+
 export type Service = {
   slug: string;
   title: string;
@@ -6,22 +13,55 @@ export type Service = {
   longDescription: string;
   image: string;
   styles: string[];
+  subSections?: ServiceSubSection[];
   faq: { question: string; answer: string }[];
 };
 
 export const services: Service[] = [
   {
-    slug: "wedding-events",
-    title: "Wedding Dance",
-    eyebrow: "Welcome dance, Sufi, Margam Kali, Oppana and Arabic styles",
-    description: "Marriages are now filled with fun and joy. A new life should begin with laughter.",
+    slug: "dance",
+    title: "Dance",
+    eyebrow: "Welcome Dance, Wedding Dance, Mohiniyattam, Margamkali, Sufi Dance and Oppana",
+    description: "Traditional, classical and wedding-focused dance performances shaped for your celebration.",
     longDescription:
-      "Brahma Entertainers designs wedding welcome dances and family performances that feel personal, polished and celebratory. From graceful Kerala traditions to energetic Bollywood medleys, every sequence is rehearsed around your venue, family and timeline.",
+      "Brahma Entertainers designs dance performances that feel personal, polished and rooted in the occasion. From graceful wedding welcomes to Kerala traditions and devotional stage pieces, each act is planned around your venue, music, costume mood and audience.",
     image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85",
-    styles: ["Welcome Dance", "Sufi", "Margamkali", "Oppana", "Arabic", "Bollywood"],
+    styles: ["Welcome Dance", "Wedding Dance", "Mohiniyattam", "Margamkali", "Sufi Dance", "Oppana"],
+    subSections: [
+      {
+        title: "Welcome Dance",
+        description: "A graceful opening performance for guest arrivals, bride and groom entries, receptions and premium event welcomes.",
+        image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        title: "Wedding Dance",
+        description: "Custom choreography for couples, families and friends with rehearsed formations, clean music edits and stage-ready presentation.",
+        image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        title: "Mohiniyattam",
+        description: "Elegant classical Kerala dance with expressive storytelling, refined costume styling and a calm ceremonial presence.",
+        image: "https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        title: "Margamkali",
+        description: "A vibrant traditional group act suited for wedding stages, cultural evenings and Kerala-themed celebrations.",
+        image: "https://images.unsplash.com/photo-1526894198609-10b3cdf45c52?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        title: "Sufi Dance",
+        description: "A soulful whirling performance with devotional energy, flowing costumes and dramatic lighting-friendly movement.",
+        image: "https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        title: "Oppana",
+        description: "A festive bridal celebration act with rhythmic claps, expressive group formations and a joyful Kerala wedding mood.",
+        image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80"
+      }
+    ],
     faq: [
       { question: "Can family members join the performance?", answer: "Yes. The choreography can include family, friends and Brahma Entertainers' professional dancers." },
-      { question: "How early should we book?", answer: "For wedding season, four to six weeks is ideal so rehearsals and costumes can be planned calmly." }
+      { question: "Can we mix classical and wedding dance styles?", answer: "Yes. Brahma Entertainers can combine traditional, classical and modern segments into one smooth performance flow." }
     ]
   },
   {
@@ -41,15 +81,37 @@ export const services: Service[] = [
   {
     slug: "stage-shows",
     title: "Stage Shows",
-    eyebrow: "Large-format performances across South India",
-    description: "High-impact stage productions for festivals, launches and public events.",
+    eyebrow: "DJ, Instrumental Fusion, Singers and EMcee for complete stage programs",
+    description: "High-impact stage entertainment for festivals, launches, receptions and public events.",
     longDescription:
-      "Brahma Entertainers builds complete stage packages with choreography, dancers, costumes and performance flow. The team adapts to cultural evenings, award nights, college festivals and public celebrations.",
+      "Brahma Entertainers builds complete stage show packages with music, hosting, live performance flow and audience energy. The team adapts to cultural evenings, award nights, college festivals, receptions and public celebrations.",
     image: "https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=1400&q=85",
-    styles: ["Bollywood", "Folk Fusion", "Light Dance", "Fire Dance", "Theme Acts"],
+    styles: ["DJ", "Instrumental Fusion", "Singers", "EMcee"],
+    subSections: [
+      {
+        title: "DJ",
+        description: "Energetic DJ sets for receptions, after-parties and stage events with music flow planned around the crowd.",
+        image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        title: "Instrumental Fusion",
+        description: "Live instrumental moments that blend traditional and contemporary sounds for premium entries and show highlights.",
+        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        title: "Singers",
+        description: "Vocal performances for melody sets, event openings, dedications and full-stage entertainment blocks.",
+        image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        title: "EMcee",
+        description: "Confident event hosting to connect performances, manage audience energy and keep the program moving smoothly.",
+        image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=80"
+      }
+    ],
     faq: [
-      { question: "Can you perform outside Kottayam?", answer: "Yes. Brahma Entertainers performs across Kerala and South India based on event requirements." },
-      { question: "Do you provide costumes?", answer: "Costumes and styling can be included in the performance package." }
+      { question: "Can stage show services be booked together?", answer: "Yes. DJ, singers, instrumental fusion and EMcee can be combined into one coordinated stage package." },
+      { question: "Can you perform outside Kottayam?", answer: "Yes. Brahma Entertainers performs across Kerala and South India based on event requirements." }
     ]
   },
   {

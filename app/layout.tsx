@@ -4,7 +4,6 @@ import "./globals.css";
 import { AppProviders } from "@/components/providers/app-providers";
 import { SiteNav } from "@/components/site-nav";
 import { SitePreloader } from "@/components/site-preloader";
-import { CustomCursor } from "@/components/custom-cursor";
 import { SiteFooter } from "@/components/site-footer";
 
 const display = Playfair_Display({
@@ -58,13 +57,29 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     url: "https://brahmadancestudio.com",
     telephone: ["+91 96330 18835", "+91 96563 18835"],
     email: "dancebrahma@gmail.com",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Brahma Entertainers",
-      addressLocality: "Changanasserry",
-      addressRegion: "Kottayam",
-      addressCountry: "IN"
-    },
+    address: [
+      {
+        "@type": "PostalAddress",
+        streetAddress: "Brahma Entertainers",
+        addressLocality: "Changanasserry",
+        addressRegion: "Kottayam",
+        addressCountry: "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        streetAddress: "Brahma Entertainers",
+        addressLocality: "Kochi",
+        addressRegion: "Kerala",
+        addressCountry: "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        streetAddress: "Brahma Entertainers",
+        addressLocality: "Ernakulam",
+        addressRegion: "Kerala",
+        addressCountry: "IN"
+      }
+    ],
     openingHours: "Mo-Su 09:00-20:00",
     sameAs: [
       "https://instagram.com/brahmadancestudio",
@@ -78,7 +93,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="font-sans antialiased">
         <AppProviders>
           <SitePreloader />
-          <CustomCursor />
           <SiteNav />
           <main>{children}</main>
           <SiteFooter />

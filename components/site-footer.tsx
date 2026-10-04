@@ -21,7 +21,9 @@ export function SiteFooter() {
             <div className="mt-6 grid gap-2 text-sm text-kasavu/75">
               <a className="inline-flex items-center gap-2" href={`tel:${studio.phonePrimary.replace(/\s/g, "")}`}><Phone className="h-4 w-4 text-gold" />{studio.phonePrimary} / {studio.phoneSecondary}</a>
               <a className="inline-flex items-center gap-2" href={`mailto:${studio.email}`}><Mail className="h-4 w-4 text-gold" />{studio.email}</a>
-              <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4 text-gold" />{studio.address}</span>
+              {studio.locations.map((loc) => (
+                <span className="inline-flex items-center gap-2" key={loc.address}><MapPin className="h-4 w-4 shrink-0 text-gold" />{loc.address}</span>
+              ))}
             </div>
             <SocialIcons className="mt-6" />
           </div>

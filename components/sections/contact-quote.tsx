@@ -146,9 +146,19 @@ export function ContactQuote() {
             <p className="flex gap-3"><Phone className="h-5 w-5" />{studio.phonePrimary} / {studio.phoneSecondary}</p>
             <p>{studio.email}</p>
             <p>{studio.hours}</p>
-            <p className="flex gap-3"><MapPin className="h-5 w-5" />{studio.address}</p>
           </div>
-          <div className="mt-8 aspect-[4/3] overflow-hidden border border-white/30 bg-white text-kasavu">
+          <div className="mt-6">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-white/70">Our Locations</p>
+            <div className="grid gap-2">
+              {studio.locations.map((loc) => (
+                <p className="flex items-start gap-3 text-sm" key={loc.name}>
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-white/70" />
+                  <span><span className="font-semibold">{loc.name}</span><br /><span className="text-white/70">{loc.address}</span></span>
+                </p>
+              ))}
+            </div>
+          </div>
+          <div className="mt-6 aspect-[4/3] overflow-hidden border border-white/30 bg-white text-kasavu">
             <iframe
               className="h-full w-full grayscale invert"
               title="Brahma Entertainers map"

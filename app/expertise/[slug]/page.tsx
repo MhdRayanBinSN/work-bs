@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { GalleryGrid } from "@/components/sections/gallery-grid";
 import { ContactQuote } from "@/components/sections/contact-quote";
+import { ServiceSubsectionGallery } from "@/components/sections/service-subsection-gallery";
 import { services, getService } from "@/data/services";
 import { Button } from "@/components/ui/button";
 import { Container, Section } from "@/components/ui/section";
@@ -25,6 +26,11 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   const { slug } = await params;
   const service = getService(slug);
   if (!service) notFound();
+  const detailItems = service.subSections ?? service.styles.map((style) => ({
+    title: style,
+    description: "A polished Brahma Entertainers arrangement that can be adapted to your music, venue and performer count.",
+    image: service.image
+  }));
 
   return (
     <>
@@ -39,15 +45,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         </Container>
       </section>
 
-      <Section eyebrow="Sub Styles" title="Designed around your stage, family and audience.">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {service.styles.map((style) => (
-            <div className="border border-gold/20 bg-white/5 p-6" key={style}>
-              <h2 className="font-display text-3xl text-kasavu">{style}</h2>
-              <p className="mt-3 text-kasavu/65">A polished Brahma Entertainers arrangement that can be adapted to your music, venue and performer count.</p>
-            </div>
-          ))}
-        </div>
+      <Section eyebrow="Service Details" title={`${service.title} options designed around your stage, family and audience.`}>
+        <ServiceSubsectionGallery items={detailItems} serviceImage={service.image} serviceTitle={service.title} />
       </Section>
 
       <GalleryGrid preview />
