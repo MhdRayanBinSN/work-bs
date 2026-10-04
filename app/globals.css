@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(225, 29, 72, 0.16), transparent 32rem),
+    radial-gradient(circle at 85% 15%, rgba(251, 113, 133, 0.18), transparent 28rem),
+    linear-gradient(180deg, #ffffff 0%, #fff1f2 42%, #ffffff 100%);
+  color: var(--foreground);
+  cursor: default;
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  opacity: 0.08;
+  background-image:
+    linear-gradient(rgba(225, 29, 72, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(185, 28, 28, 0.1) 1px, transparent 1px);
+  background-size: 3px 3px;
+  mix-blend-mode: screen;
+}
+
+::selection {
+  background: #e11d48;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gold-mask {
+  background: linear-gradient(90deg, #7f1d1d, #e11d48, #fb7185);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.marquee {
+  animation: marquee 22s linear infinite;
+}
+
+.reverse-marquee {
+  animation: marquee 18s linear infinite reverse;
+}
+
+.spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
