@@ -3,7 +3,7 @@ import { GalleryGrid } from "@/components/sections/gallery-grid";
 
 export const metadata: Metadata = {
   title: "Gallery",
-  description: "Wedding dance, stage show, Margam Kali, Oppana, Sufi and academy gallery from Brahma Dance Studio."
+  description: "Wedding dance, stage show, Margam Kali, Oppana, Sufi and academy gallery from Brahma Entertainers."
 };
 
 export default function GalleryPage() {

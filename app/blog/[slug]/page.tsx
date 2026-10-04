@@ -31,7 +31,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             Great event choreography starts with clarity: the venue size, the people performing, the emotion of the occasion and the time available for rehearsal. Once those are clear, a dance can feel cinematic without becoming stressful.
           </p>
           <p>
-            Brahma Dance Studio builds each performance around those details, combining tradition, crowd energy and practical stage direction so the final moment feels polished and personal.
+            Brahma Entertainers builds each performance around those details, combining tradition, crowd energy and practical stage direction so the final moment feels polished and personal.
           </p>
         </div>
         <Button className="mt-10" href="/contact">Plan Your Performance</Button>

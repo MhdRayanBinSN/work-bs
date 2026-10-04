@@ -3,7 +3,7 @@ import { ContactQuote } from "@/components/sections/contact-quote";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get a quick quote from Brahma Dance Studio for weddings, stage shows, corporate events and choreography."
+  description: "Get a quick quote from Brahma Entertainers for weddings, stage shows, corporate events and choreography."
 };
 
 export default function ContactPage() {

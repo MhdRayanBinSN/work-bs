@@ -15,7 +15,7 @@ export function SiteFooter() {
           <div>
             <div className="flex flex-wrap items-center gap-5">
               <BrandLogo className="h-28 w-28 rounded-2xl" />
-              <h2 className="font-display text-4xl">Brahma Dance Studio</h2>
+              <h2 className="font-display text-4xl">Brahma Entertainers</h2>
             </div>
             <p className="mt-4 max-w-xl text-kasavu/70">Professional dance team in South India for wedding welcome dances, stage shows, corporate events, choreography and academy classes.</p>
             <div className="mt-6 grid gap-2 text-sm text-kasavu/75">
@@ -43,7 +43,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-gold/15 pt-6 text-xs uppercase tracking-[0.22em] text-kasavu/50">
-          <p>Copyright 2026 Brahma Dance Studio</p>
+          <p>Copyright 2026 Brahma Entertainers</p>
           <p>dancers in kerala / wedding dancers kerala</p>
         </div>
       </Container>

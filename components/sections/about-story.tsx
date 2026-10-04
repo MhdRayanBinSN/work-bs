@@ -7,14 +7,14 @@ import { Section } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 
 const story =
-  "BRAHMA is one of the leading dance companies, formed in 2010 at Kottayam, Kerala. The creator, director and mastermind Master Jacob's ultimate passion for dance is how BRAHMA became a leading dance studio in South India.";
+  "Brahma Entertainers is one of the leading dance companies, formed in 2010 at Kottayam, Kerala. The creator, director and mastermind Master Jacob's ultimate passion for dance is how Brahma Entertainers became a leading entertainment team in South India.";
 
 export function AboutStory() {
   const { scrollYProgress } = useScroll();
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
 
   return (
-    <Section eyebrow="About Brahma" title="Cinematic stage energy, rooted in Kerala heritage." className="bg-night">
+    <Section eyebrow="About Brahma Entertainers" title="Cinematic stage energy, rooted in Kerala heritage." className="bg-night">
       <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <p className="font-display text-3xl leading-snug text-kasavu/35 sm:text-5xl">
@@ -56,11 +56,11 @@ export function AboutStory() {
               transition={{ delay: index * 0.14, duration: 0.8 }}
               key={src}
             >
-              <Image src={src} alt="Brahma dance performance moment" fill className="object-cover" sizes="(min-width: 1024px) 32vw, 80vw" />
+              <Image src={src} alt="Brahma Entertainers performance moment" fill className="object-cover" sizes="(min-width: 1024px) 32vw, 80vw" />
             </motion.div>
           ))}
           <motion.div className="absolute bottom-0 right-0 grid h-36 w-36 place-items-center rounded-full border border-gold/40 text-center text-[10px] uppercase tracking-[0.22em] text-gold" style={{ rotate }}>
-            Brahma Dance Studio - Since 2010 -
+            Brahma Entertainers - Since 2010 -
           </motion.div>
         </div>
       </div>

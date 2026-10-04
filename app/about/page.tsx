@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/section";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about Brahma Dance Studio, founded in 2010 in Kottayam, Kerala."
+  description: "Learn about Brahma Entertainers, founded in 2010 in Kottayam, Kerala."
 };
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
         <Container className="relative z-10 py-24">
           <p className="text-xs font-bold uppercase tracking-[0.34em] text-gold">Since 2010</p>
           <h1 className="mt-5 max-w-5xl font-display text-6xl leading-none text-kasavu sm:text-8xl">A Kottayam studio with a South India stage presence.</h1>
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-kasavu/75">Master Jacob&apos;s passion for dance shaped Brahma into a professional team for weddings, cultural performances, choreography and academy training.</p>
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-kasavu/75">Master Jacob&apos;s passion for dance shaped Brahma Entertainers into a professional team for weddings, cultural performances, choreography and academy training.</p>
           <Button className="mt-8" href="/contact">Start a Project</Button>
         </Container>
       </section>

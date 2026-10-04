@@ -6,7 +6,7 @@ import { Section } from "@/components/ui/section";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Planning notes and ideas from Brahma Dance Studio."
+  description: "Planning notes and ideas from Brahma Entertainers."
 };
 
 export default function BlogPage() {

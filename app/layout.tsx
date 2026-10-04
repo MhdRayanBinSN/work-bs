@@ -22,17 +22,17 @@ const sans = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://brahmadancestudio.com"),
   title: {
-    default: "Professional Wedding Dancers In Kerala | Brahma Dance Studio",
-    template: "%s | Brahma Dance Studio"
+    default: "Professional Wedding Dancers In Kerala | Brahma Entertainers",
+    template: "%s | Brahma Entertainers"
   },
   description:
-    "Brahma Dance Studio in Kottayam, Kerala offers wedding welcome dance, Margam Kali, Bollywood, corporate events, choreography and stage shows.",
+    "Brahma Entertainers in Kottayam, Kerala offers wedding welcome dance, Margam Kali, Bollywood, corporate events, choreography and stage shows.",
   openGraph: {
-    title: "Professional Wedding Dancers In Kerala | Brahma Dance Studio",
+    title: "Professional Wedding Dancers In Kerala | Brahma Entertainers",
     description:
-      "Cinematic wedding dances, stage shows, academy classes and choreography from Brahma Dance Studio.",
+      "Cinematic wedding dances, stage shows, academy classes and choreography from Brahma Entertainers.",
     url: "https://brahmadancestudio.com",
-    siteName: "Brahma Dance Studio",
+    siteName: "Brahma Entertainers",
     images: [
       {
         url: "https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=1200&q=85",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Wedding Dancers In Kerala | Brahma Dance Studio",
+    title: "Professional Wedding Dancers In Kerala | Brahma Entertainers",
     description: "Wedding welcome dance, Margam Kali, Bollywood, choreography and stage shows in Kerala."
   }
 };
@@ -54,13 +54,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "PerformingGroup"],
-    name: "Brahma Dance Studio",
+    name: "Brahma Entertainers",
     url: "https://brahmadancestudio.com",
     telephone: ["+91 96330 18835", "+91 96563 18835"],
     email: "dancebrahma@gmail.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Brahma Dance Studio",
+      streetAddress: "Brahma Entertainers",
       addressLocality: "Changanasserry",
       addressRegion: "Kottayam",
       addressCountry: "IN"

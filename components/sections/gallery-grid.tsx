@@ -16,7 +16,7 @@ export function GalleryGrid({ preview = false }: { preview?: boolean }) {
   }, [activeFilter, preview]);
 
   return (
-    <Section eyebrow="Portfolio" title={preview ? "Moments from weddings, stages and academy floors." : "Explore Brahma's performance archive."} className="bg-night">
+    <Section eyebrow="Portfolio" title={preview ? "Moments from weddings, stages and academy floors." : "Explore Brahma Entertainers' performance archive."} className="bg-night">
       <div className="mb-9 flex gap-2 overflow-x-auto pb-2">
         {filters.map((filter) => (
           <button

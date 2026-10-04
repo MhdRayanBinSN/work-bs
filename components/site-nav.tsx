@@ -6,7 +6,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Mail, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { services } from "@/data/services";
 import { studio, whatsappUrl } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
 import { SocialIcons } from "@/components/social-icons";
 
@@ -58,7 +57,7 @@ export function SiteNav() {
         transition={{ duration: 0.35 }}
       >
         <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
-          <BrandLogo className="h-16 w-16" priority />
+          <BrandLogo className="h-20 w-20" priority />
 
           <div className="hidden items-center gap-7 lg:flex">
             {nav.map((item) =>
@@ -86,9 +85,7 @@ export function SiteNav() {
             )}
           </div>
 
-          <div className="hidden shrink-0 lg:block">
-            <Button className="whitespace-nowrap px-6" href="/contact">Get Quick Quote</Button>
-          </div>
+          
 
           <button className="grid h-11 w-11 place-items-center rounded-full border border-gold/30 text-kasavu lg:hidden" onClick={() => setOpen(true)} aria-label="Open menu">
             <Menu className="h-5 w-5" />
@@ -123,7 +120,7 @@ export function SiteNav() {
               ))}
             </div>
             <p className="spin-slow absolute bottom-8 left-6 h-32 w-32 rounded-full border border-gold/30 p-7 text-center text-xs uppercase tracking-[0.25em] text-gold">
-              Brahma Dance Studio
+              Brahma Entertainers
             </p>
           </motion.div>
         ) : null}

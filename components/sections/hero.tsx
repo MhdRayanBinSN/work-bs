@@ -68,10 +68,7 @@ export function Hero() {
             </svg>
           </span>
         </h1>
-        <div className="mt-7 flex flex-wrap items-center gap-4 text-kasavu/80">
-          <p className="text-lg">Professional Dance Team In South India</p>
-          <p className="text-sm font-bold uppercase tracking-[0.24em] text-gold">Welcome Dance / Wedding Dance / Oppana / Sufi</p>
-        </div>
+        
         <div className="mt-8 flex max-w-4xl flex-wrap items-center gap-4">
           <Button className="whitespace-nowrap" href="/contact">Book Your Wedding Dance</Button>
           <Button className="whitespace-nowrap px-6" href="/gallery" variant="ghost" data-cursor="PLAY" icon={false}>

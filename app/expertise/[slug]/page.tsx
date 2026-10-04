@@ -44,7 +44,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
           {service.styles.map((style) => (
             <div className="border border-gold/20 bg-white/5 p-6" key={style}>
               <h2 className="font-display text-3xl text-kasavu">{style}</h2>
-              <p className="mt-3 text-kasavu/65">A polished Brahma arrangement that can be adapted to your music, venue and performer count.</p>
+              <p className="mt-3 text-kasavu/65">A polished Brahma Entertainers arrangement that can be adapted to your music, venue and performer count.</p>
             </div>
           ))}
         </div>

@@ -47,7 +47,7 @@ export function ContactQuote() {
 
   const makeWhatsAppMessage = () => {
     const details = form.getValues();
-    return `Hi Brahma Dance Studio, I would like a quote for ${details.eventType} on ${details.date} at ${details.location}. Preferred styles: ${details.styles}. Name: ${details.name}, phone: ${details.phone}.`;
+    return `Hi Brahma Entertainers, I would like a quote for ${details.eventType} on ${details.date} at ${details.location}. Preferred styles: ${details.styles}. Name: ${details.name}, phone: ${details.phone}.`;
   };
 
   async function submit(values: QuoteForm) {
@@ -151,7 +151,7 @@ export function ContactQuote() {
           <div className="mt-8 aspect-[4/3] overflow-hidden border border-white/30 bg-white text-kasavu">
             <iframe
               className="h-full w-full grayscale invert"
-              title="Brahma Dance Studio map"
+              title="Brahma Entertainers map"
               loading="lazy"
               src="https://www.google.com/maps?q=Changanasserry%20Kottayam%20Kerala&output=embed"
             />

@@ -16,11 +16,11 @@ export function BrandLogo({ className, imageClassName, priority = false }: Brand
         "relative block shrink-0 transition hover:scale-[1.02]",
         className
       )}
-      aria-label="Brahma Dance Studio home"
+      aria-label="Brahma Entertainers home"
     >
       <Image
         src="/assets/logo.png"
-        alt="Brahma Dance Studio logo"
+        alt="Brahma Entertainers logo"
         fill
         priority={priority}
         className={cn("object-contain", imageClassName)}

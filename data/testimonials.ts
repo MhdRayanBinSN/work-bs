@@ -20,7 +20,7 @@ export const masters = [
   {
     name: "Mr. Jacob G Mathew",
     role: "Director / Choreographer, CEO & Founder",
-    bio: "Works across TV dance shows, films and event productions with Brahma's signature stage language.",
+    bio: "Works across TV dance shows, films and event productions with Brahma Entertainers' signature stage language.",
     image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=80"
   },
   {

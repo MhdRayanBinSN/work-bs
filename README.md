@@ -1,6 +1,6 @@
-# Brahma Dance Studio Next.js Rebuild
+# Brahma Entertainers Next.js Rebuild
 
-A cinematic Next.js App Router site for Brahma Dance Studio, built from `brahma-dance-studio-nextjs-prompts.md`.
+A cinematic Next.js App Router site for Brahma Entertainers, built from `brahma-dance-studio-nextjs-prompts.md`.
 
 ## Run locally
 
@@ -39,7 +39,7 @@ Most site content lives in:
 
 ## Placeholder media checklist
 
-Replace the current remote placeholder images with real Brahma assets:
+Replace the current remote placeholder images with real Brahma Entertainers assets:
 
 - Hero performance video loop and poster
 - Wedding welcome dance photos
