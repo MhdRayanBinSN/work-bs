@@ -17,6 +17,9 @@ export type Service = {
   faq: { question: string; answer: string }[];
 };
 
+// Add local service images in public/assets/services/<service-name>/ and keep the filenames here in sync.
+const localServiceImage = (category: string, fileName = "1.jpeg") => `/assets/services/${category}/${fileName}`;
+
 export const services: Service[] = [
   {
     slug: "dance",
@@ -25,38 +28,38 @@ export const services: Service[] = [
     description: "Traditional, classical and wedding-focused dance performances shaped for your celebration.",
     longDescription:
       "Brahma Entertainers designs dance performances that feel personal, polished and rooted in the occasion. From graceful wedding welcomes to Kerala traditions and devotional stage pieces, each act is planned around your venue, music, costume mood and audience.",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85",
+    image: localServiceImage("dance"),
     styles: ["Welcome Dance", "Wedding Dance", "Mohiniyattam", "Margamkali", "Sufi Dance", "Oppana"],
     subSections: [
       {
         title: "Welcome Dance",
         description: "A graceful opening performance for guest arrivals, bride and groom entries, receptions and premium event welcomes.",
-        image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("dance")
       },
       {
         title: "Wedding Dance",
         description: "Custom choreography for couples, families and friends with rehearsed formations, clean music edits and stage-ready presentation.",
-        image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("dance")
       },
       {
         title: "Mohiniyattam",
         description: "Elegant classical Kerala dance with expressive storytelling, refined costume styling and a calm ceremonial presence.",
-        image: "https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("dance")
       },
       {
         title: "Margamkali",
         description: "A vibrant traditional group act suited for wedding stages, cultural evenings and Kerala-themed celebrations.",
-        image: "https://images.unsplash.com/photo-1526894198609-10b3cdf45c52?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("dance")
       },
       {
         title: "Sufi Dance",
         description: "A soulful whirling performance with devotional energy, flowing costumes and dramatic lighting-friendly movement.",
-        image: "https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("dance")
       },
       {
         title: "Oppana",
         description: "A festive bridal celebration act with rhythmic claps, expressive group formations and a joyful Kerala wedding mood.",
-        image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("dance")
       }
     ],
     faq: [
@@ -71,7 +74,7 @@ export const services: Service[] = [
     description: "Technique-focused training for beginners, performers and students preparing for stage.",
     longDescription:
       "The academy blends disciplined training with high-energy practice. Students learn foundations, musicality, performance confidence and stage discipline across contemporary and commercial dance styles.",
-    image: "https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=1400&q=85",
+    image: localServiceImage("training-academy"),
     styles: ["Hip-Hop", "Jazz", "Funk", "Lyrical", "Contemporary"],
     faq: [
       { question: "Are beginner batches available?", answer: "Yes. Batches can be grouped by age and experience level." },
@@ -85,28 +88,28 @@ export const services: Service[] = [
     description: "High-impact stage entertainment for festivals, launches, receptions and public events.",
     longDescription:
       "Brahma Entertainers builds complete stage show packages with music, hosting, live performance flow and audience energy. The team adapts to cultural evenings, award nights, college festivals, receptions and public celebrations.",
-    image: "https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=1400&q=85",
+    image: localServiceImage("stage-shows"),
     styles: ["DJ", "Instrumental Fusion", "Singers", "EMcee"],
     subSections: [
       {
         title: "DJ",
         description: "Energetic DJ sets for receptions, after-parties and stage events with music flow planned around the crowd.",
-        image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("stage-shows")
       },
       {
         title: "Instrumental Fusion",
         description: "Live instrumental moments that blend traditional and contemporary sounds for premium entries and show highlights.",
-        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("stage-shows")
       },
       {
         title: "Singers",
         description: "Vocal performances for melody sets, event openings, dedications and full-stage entertainment blocks.",
-        image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("stage-shows")
       },
       {
         title: "EMcee",
         description: "Confident event hosting to connect performances, manage audience energy and keep the program moving smoothly.",
-        image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=80"
+        image: localServiceImage("stage-shows")
       }
     ],
     faq: [
@@ -121,7 +124,7 @@ export const services: Service[] = [
     description: "Sharp, professional dance acts that lift the energy of corporate and private events.",
     longDescription:
       "From opening acts to thematic brand performances, Brahma Entertainers crafts clean, punctual and event-ready choreography for corporate stages, destination events and private gatherings.",
-    image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1400&q=85",
+    image: localServiceImage("corporate-events"),
     styles: ["Opening Act", "Brand Theme", "Bollywood", "Flash Mob", "Team Celebration"],
     faq: [
       { question: "Can you customize for a brand theme?", answer: "Yes. Music, costumes and choreography can be adapted to the brand or event concept." },
@@ -135,7 +138,7 @@ export const services: Service[] = [
     description: "Let's pair up for choreography that makes the moment memorable.",
     longDescription:
       "Brahma Entertainers collaborates on choreography for event productions, social campaigns, music-led concepts and marketing moments where movement needs to feel distinctive and camera-ready.",
-    image: "https://images.unsplash.com/photo-1535525153412-5a42439a210d?auto=format&fit=crop&w=1400&q=85",
+    image: localServiceImage("choreo-works"),
     styles: ["Event Choreography", "Music Concepts", "Campaign Acts", "Family Training", "Stage Blocking"],
     faq: [
       { question: "Can you choreograph only, without dancers?", answer: "Yes. Brahma Entertainers can choreograph, train and direct your own team." },
